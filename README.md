@@ -71,11 +71,14 @@ ssh -T git@github.com
 Githubdemo/
 ├── CMakeLists.txt      # CMake 构建配置
 ├── main.cpp            # 主程序入口
-├── cmake-build-debug/  # 编译输出（自动生成）
+├── cmake-build-debug/  # 编译输出（自动生成，不提交）
 ├── .git/               # Git 版本控制
-├── .idea/              # CLion 配置
+├── .gitignore          # Git 忽略配置（CLion/.idea/等）
+├── .idea/              # CLion 配置（本地，不提交）
 └── README.md           # 本文件
 ```
+
+> 💡 **说明**：`.idea/` 和 `cmake-build-debug/` 是本地生成的，已加入 `.gitignore`，不会上传到 GitHub。
 
 ---
 
