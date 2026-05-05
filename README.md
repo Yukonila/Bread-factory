@@ -10,26 +10,10 @@
 
 ## 📖 目录
 
-- [🚀 快速开始](#-快速开始)
 - [🔧 环境配置](#-环境配置)
+- [⚙️ CLion 设置](#️-clion-设置)
 - [📝 项目结构](#-项目结构)
 - [❓ 常见问题](#-常见问题)
-- [🤝 贡献指南](#-贡献指南)
-
----
-
-## 🚀 快速开始
-
-```bash
-# 克隆仓库
-git clone git@github.com:Yukonila/Githubdemo.git
-cd Githubdemo
-
-# 编译运行
-cmake -B cmake-build-debug
-cmake --build cmake-build-debug
-./cmake-build-debug/Githubdemo
-```
 
 ---
 
@@ -50,7 +34,7 @@ git config --global user.name "你的用户名"
 git config --global user.email "你的邮箱"
 ```
 
-#### 3️⃣ 生成 SSH 密钥
+#### 3️⃣ 生成 SSH 密钥（推荐）
 
 ```bash
 ssh-keygen -t ed25519 -C "你的邮箱" -f ~/.ssh/id_ed25519 -N ""
@@ -65,6 +49,38 @@ ssh -T git@github.com
 
 ---
 
+## ⚙️ CLion 设置
+
+### 1️⃣ 打开项目
+
+1. 启动 CLion  
+2. 点击 **File → Open**  
+3. 选择 `/home/Koni/Mycpp` 目录  
+4. 点击 **OK**
+
+### 2️⃣ 配置 CMake
+
+CLion 会自动读取 `CMakeLists.txt`，但可以手动调整：
+
+1. 点击右上角 **CMake** 配置下拉框 → **Edit Configurations**  
+2. 确保 **Build, Run, and Tests** 使用 `GitHubdemo` 目标  
+3. 点击 **Apply** 保存
+
+### 3️⃣ 忽略本地文件
+
+CLion 会生成 `.idea/` 和 `cmake-build-debug/` 文件夹，这些是本地配置，**不需要提交到 GitHub**：
+
+- `.idea/`：CLion 项目配置（编译器路径、代码风格等）  
+- `cmake-build-debug/`：编译输出（可执行文件、中间文件）
+
+### 4️⃣ 重新加载项目
+
+修改 `CMakeLists.txt` 后，点击：  
+**Tools → CMake → Reload CMake Project**  
+或点击右上角 **Sync Project with CMakeLists.txt** 🔄
+
+---
+
 ## 📝 项目结构
 
 ```
@@ -73,12 +89,10 @@ Githubdemo/
 ├── main.cpp            # 主程序入口
 ├── cmake-build-debug/  # 编译输出（自动生成，不提交）
 ├── .git/               # Git 版本控制
-├── .gitignore          # Git 忽略配置（CLion/.idea/等）
-├── .idea/              # CLion 配置（本地，不提交）
 └── README.md           # 本文件
 ```
 
-> 💡 **说明**：`.idea/` 和 `cmake-build-debug/` 是本地生成的，已加入 `.gitignore`，不会上传到 GitHub。
+> 💡 **说明**：`.idea/` 和 `cmake-build-debug/` 是本地生成的，不会上传到 GitHub。
 
 ---
 
