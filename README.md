@@ -1,10 +1,10 @@
-# 🐧 Bread Factory
+# 🐧 Githubdemo
 
 > 🍞 一个简单的 C++ 项目，记录新手成长的第一步
 
 [![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?logo=archlinux&logoColor=white)](https://archlinux.org/)
 [![C++](https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white)](https://isocpp.org/)
-[![GitHub](https://img.shields.io/github/license/Yukonila/Bread-factory?color=blue)](https://github.com/Yukonila/Bread-factory/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/Yukonila/Githubdemo?color=blue)](https://github.com/Yukonila/Githubdemo/blob/master/LICENSE)
 
 ---
 
@@ -22,13 +22,13 @@
 
 ```bash
 # 克隆仓库
-git clone git@github.com:Yukonila/Bread-factory.git
-cd Bread-factory
+git clone git@github.com:Yukonila/Githubdemo.git
+cd Githubdemo
 
 # 编译运行
 cmake -B cmake-build-debug
 cmake --build cmake-build-debug
-./cmake-build-debug/Bread-factory
+./cmake-build-debug/Githubdemo
 ```
 
 ---
@@ -68,7 +68,7 @@ ssh -T git@github.com
 ## 📝 项目结构
 
 ```
-Bread-factory/
+Githubdemo/
 ├── CMakeLists.txt      # CMake 构建配置
 ├── main.cpp            # 主程序入口
 ├── cmake-build-debug/  # 编译输出（自动生成）
@@ -94,7 +94,7 @@ git remote -v
 ### Q: 如何更新远程仓库地址？
 
 ```bash
-git remote set-url origin git@github.com:Yukonila/Bread-factory.git
+git remote set-url origin git@github.com:Yukonila/Githubdemo.git
 ```
 
 ### Q: 如何回退到上一个提交？
@@ -134,7 +134,7 @@ git reset --hard HEAD~1
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/Yukonila/Bread-factory?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Yukonila/Bread-factory?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Yukonila/Githubdemo?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Yukonila/Githubdemo?style=social)
 
 </div>
