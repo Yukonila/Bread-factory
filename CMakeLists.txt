@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.2)
-project(Bread-factory)
+project(GitHubdemo)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Bread-factory main.cpp)
+add_executable(GitHubdemo main.cpp)
